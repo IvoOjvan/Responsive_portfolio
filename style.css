@@ -31,7 +31,7 @@ img{
 
 /* Hero section */
 #hero{
-    background-image: url('/img/bg-image.jpg');
+    background-image: url('img/bg-image.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
