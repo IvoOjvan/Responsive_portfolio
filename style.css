@@ -31,7 +31,7 @@ img{
 
 /* Hero section */
 #hero{
-    background-image: url(/img/bg-image.jpg);
+    background-image: url('/img/bg-image.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -45,17 +45,7 @@ img{
     justify-content: flex-start;
 }
 
-#hero::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    opacity: .7;
-    z-index: -1;
-}
+
 
 #hero h1{
     display: block;
