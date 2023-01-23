@@ -174,7 +174,6 @@ img{
     width: 100%;
     border-radius: 50%;
     border: 3px solid white;
-    animation: hamburger_pulse 1s ease infinite;
 }
 
 #header .hamburger .bar{
@@ -239,9 +238,7 @@ img{
     width: fit-content;
     font-size: 4rem;
     position: relative;
-    color: transparent;
-    animation: text_reveal .5s ease forwards;
-    animation-delay: 1s;
+    color: white;
 }
 
 #hero h1:nth-child(1){
@@ -253,8 +250,7 @@ img{
 }
 
 #hero h1:nth-child(3){
-    animation: text_reveal_name 0.5s ease forwards;
-    animation-delay: 3s;
+    color: #D62222;
 }
 
 #hero h1 span{
@@ -345,12 +341,16 @@ letter-spacing: 0.05rem;
     margin-bottom: 20px;
 }
 
+#service .service-bottom .icon img{
+    margin-bottom: 10px;
+}
 
 
 #services .service-item h2{
     color: #D62222;
     font-size: 2rem;
     margin-bottom: 10px;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 
@@ -368,6 +368,11 @@ letter-spacing: 0.05rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
+}
+
+#projects .project-item a{
+    text-decoration: none;
+    color: #D62222;
 }
 
 #projects .projects-header h1{
@@ -429,6 +434,7 @@ letter-spacing: 0.05rem;
     width: 100%;
     overflow: hidden;
     position: relative;
+    
 }
 
 #projects .project-img::after{
@@ -439,15 +445,16 @@ letter-spacing: 0.05rem;
     height: 100%;
     width: 100%;
     background-color:#1C1E1F;
-    opacity: .7;
+    opacity: .3;
 }
 
 #projects .project-img img{
     transition: .3s ease transform;
+    object-fit: contain;
 }
 
 #projects .project-item:hover .project-img img{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 /* End Project section */
 
@@ -504,9 +511,8 @@ letter-spacing: 0.05rem;
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid white;
+    border: 7px solid #D62222;
     z-index: -2;
-    animation: border_reveal 3s ease forwards;
     animation-delay: .5s;
 }
 
@@ -561,48 +567,6 @@ letter-spacing: 0.05rem;
 }
 /* End contact section*/
 
-/* Keyframes */
-@keyframes text_reveal_box{
-    50%{
-        width: 100%;
-        left: 0;
-    }
-    100%{
-        width: 0;
-        left: 100%;
-    }
-}
-
-@keyframes text_reveal{
-    100%{
-        color: white;
-    }
-}
-
-@keyframes text_reveal_name{
-    100%{
-        color: #D62222;
-        font-weight: 500px;
-    }
-}
-
-@keyframes border_reveal{
-    100%{
-        border: 7px solid #D62222;
-    }
-}
-
-@keyframes hamburger_pulse{
-    0%{
-        opacity: 1;
-        transform: scale(1);
-    }
-    100%{
-        opacity: 0;
-        transform: scale(1.4);
-    }
-}
-/* End keyframes */
 
 
 /* Media query tablet */
